@@ -1,0 +1,274 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://images.pexels.com/photos/207601/pexels-photo-207601.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.hero {
+    background: linear-gradient(45deg, #0069D9, #4CAF50);
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+.btn-main {
+    padding: 12px 24px;
+    background-color: #fff;
+    color: #333;
+    font-size: 1rem;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.btn-main:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+.about {
+    background-color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.about p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.features {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+
+.card i {
+    font-size: 3rem;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+}
+
+.technologies {
+    background-color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.technologies ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.technologies li {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+.demo {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.demo .btn-group {
+    margin-top: 30px;
+}
+
+.demo .btn-secondary {
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin: 0 15px;
+    font-weight: 600;
+}
+
+.demo .btn-secondary:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+   
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .btn-main {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .about p {
+        font-size: 1rem;
+    }
+    
+    .feature-cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .technologies ul {
+        text-align: center;
+    }
+
+    .demo .btn-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .demo .btn-secondary {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .hero {
+        padding: 50px 0;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .btn-main {
+        padding: 8px 16px;
+        font-size: 0.8rem;
+    }
+
+    nav ul {
+        padding: 0;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+    }
+
+    .about p {
+        font-size: 0.95rem;
+    }
+
+    .card {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
